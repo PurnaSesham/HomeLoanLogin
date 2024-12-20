@@ -58,12 +58,4 @@ public class HomeLoanLoginController {
 
 	}
 
-	@GetMapping("/get-header")
-    public ResponseEntity<String> getHeader(@RequestHeader("Authorization") String customHeader, HttpServletRequest request) {
-	 String authorizationHeader = request.getHeader("Authorization");   
-	 System.out.println(authorizationHeader);
-	 return ResponseEntity.ok("Header value: " + customHeader);
-        
-    }
-
 }
